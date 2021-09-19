@@ -2,7 +2,7 @@
 
 <!--
   A presentation done entirely in Markdown, as found in extras/markdown/.
-  
+
   By: @henrikingo
 -->
 
@@ -10,20 +10,20 @@
 <head>
     <meta charset="utf-8" />
     <title>Markdown in impress.js | by Henrik Ingo @henrikingo</title>
-    
+
     <meta name="description" content="Authoring impress.js presentations in Markdown" />
     <meta name="author" content="Henrik Ingo" />
     <link rel="stylesheet" href="../../extras/highlight/styles/github.css">
 
-    <!-- Common styles for example presentations -->  
-    <link href="..\..\css\impress-common.css" rel="stylesheet" />  
+    <!-- Common styles for example presentations -->
+    <link href="..\..\css\impress-common.css" rel="stylesheet" />
     <!--
-        Styles specific for this example presentation. 
+        Styles specific for this example presentation.
     -->
     <link href="css/markdown-slides.css" rel="stylesheet" />
     <link href="css/devopsy.css" rel="stylesheet" />
     <link href="css/effects.css" rel="stylesheet" />
-    
+
 </head>
 
 <body class="impress-not-supported">
@@ -35,7 +35,7 @@
 <div id="impress" data-transition-duration="1000">
 
 <div id="markdown" class="step slide markdown" data-rel-x="0" data-rel-y="900">
-# Markdown 
+# Markdown
 ## to author Impress.js presentations
 
 * This presentation was written entirely in Markdown
@@ -49,7 +49,7 @@
 * Provided by [Markdown.js](https://github.com/evilstreak/markdown-js) in [extras/](https://github.com/impress/impress.js/tree/master/extras)
 * Jot down your bullet points in *Markdown* & have it automatically converted to HTML
 * Note: The Markdown is converted into a presentation client side, in the browser. This is unlike
-  existing tools like [Hovercraft](https://github.com/regebro/hovercraft) and 
+  existing tools like [Hovercraft](https://github.com/regebro/hovercraft) and
   markdown-impress where you generate a new
   html file on the command line.
 * This combines the ease of typing Markdown with the full power of impress.js HTML5+CSS3+JavaScript!
@@ -83,7 +83,7 @@ are converted to HTML first, then colored by Highlight.js:
         var init = function () {
             if (initialized) { return; }
             execPreInitPlugins();
-            
+
             // First we set up the viewport for mobile devices.
             // For some reason iPad goes nuts when it is not done properly.
             var meta = $("meta[name='viewport']") || document.createElement("meta");
@@ -91,7 +91,7 @@ are converted to HTML first, then colored by Highlight.js:
             if (meta.parentNode !== document.head) {
                 meta.name = 'viewport';
                 document.head.appendChild(meta);
-            }        
+            }
 
 -----
 
@@ -103,7 +103,7 @@ are converted to HTML first, then colored by Highlight.js:
 
 * Attributes from `div.step` element are simply repeated.
   * Better use relative positioning, lest your slides will all be on top of each other.
-* If you need to set some attributes, just use HTML and create a div element, then write 
+* If you need to set some attributes, just use HTML and create a div element, then write
   Markdown inside each div.
 </div>
 
@@ -115,7 +115,7 @@ are converted to HTML first, then colored by Highlight.js:
 
 <div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="2000" data-y="2000" data-z="1000" data-scale="4">
 # Simplicity of Markdown & Full power of Impress.js
-  
+
 * This slide sets its own `rotate`, `x`, `y`, and even `z` coordinates
 * Note that the Mother Teresa slide earlier was pimped with some custom CSS, all the while
   the content was written in simple Markdown.
@@ -158,8 +158,8 @@ var disableEffectsCss = function(){
 <p>Just to emphasize my point, this last slide allows you to use a JavaScript powered menu to
 toggle the CSS style:</p>
 
-<p><a href="#" onclick="enableBwCss();" class="css-menu-bw">Black &amp; white</a>, 
-<a href="#" onclick="enableDevopsCss();" class="css-menu-devopsy">Devopsy</a>, 
+<p><a href="#" onclick="enableBwCss();" class="css-menu-bw">Black &amp; white</a>,
+<a href="#" onclick="enableDevopsCss();" class="css-menu-devopsy">Devopsy</a>,
 <a href="#" onclick="enableEffectsCss();" class="css-menu-effects">Effects overload</a></p>
 
 <p>Simplicity of Markdown married with full power of Impress.js!</p>
@@ -186,7 +186,7 @@ toggle the CSS style:</p>
 <!--
     To make all described above really work, you need to include impress.js in the page.
     You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. 
+    And you should do it in the end of your document.
 -->
 <script type="text/javascript" src="../../js/impress.js"></script>
 <script>impress().init();</script>
