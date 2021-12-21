@@ -58,7 +58,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: #e9e7db;
+    background: #1f826e;
 }
 
 .step {
@@ -68,7 +68,7 @@ body {
     padding: 40px 60px;
     margin: 20px auto;
     box-sizing:         border-box;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 0 1px 1px rgba(161, 161, 161, .1);
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
