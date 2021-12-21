@@ -70,8 +70,8 @@ body {
 
     box-sizing:         border-box;
 
-    color: rgb(102, 102, 102);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1px 1px rgba(161, 161, 161, .1);
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
     letter-spacing: -1px;
