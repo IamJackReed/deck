@@ -9,7 +9,7 @@ body.effects {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: #dde5dd;
+    background: #ebe9dd;
 }
 
 .effects .step {
@@ -38,4 +38,3 @@ body.effects {
     transform:        scale(1);
     transition: 1s;
 }
-
